@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netta's Calculator</title>
+  <style>
+    body
+    {
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      font-size: 30px;
+      background-color: #FFEA00;
+    }
+	.bg
+    {
+      display: inline-block;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: #FFFF8F;
+    }
+    button
+    {
+      font-family: Tahoma, sans-serif;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      margin: 5px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+      background-color: #FFEA00;
+      color: black;
+    }
+    input[type="text"]
+    {
+      width: 240px;
+      height: 40px;
+      padding: 10px;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body >
+
+<h1>Calculator</h1>
+<div class="bg">
+<input type="text" id="d" disabled>
+<br>
+<button onclick="d.value += '7'">7</button>
+<button onclick="d.value += '8'">8</button>
+<button onclick="d.value += '9'">9</button>
+<button onclick="d.value += '+'">+</button>
+<br>
+<button onclick="d.value += '4'">4</button>
+<button onclick="d.value += '5'">5</button>
+<button onclick="d.value += '6'">6</button>
+<button onclick="d.value += '-'">-</button>
+<br>
+<button onclick="d.value += '1'">1</button>
+<button onclick="d.value += '2'">2</button>
+<button onclick="d.value += '3'">3</button>
+<button onclick="d.value += '*'">*</button>
+<br>
+<button onclick="d.value = ''">C</button>
+<button onclick="d.value += '0'">0</button>
+<button onclick="d.value = eval(d.value)">=</button>
+<button onclick="d.value += '/'">/</button>
+</div>
+
+</body>
+</html>
